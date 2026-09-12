@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ragipindi Abhinay Reddy (ABHINAY.DEV) - CSE Student at SRM University AP, AFE-FFE Scholar, AWS Emerging Talent Member, AP EAMCET Rank 4298, JEE Mains Qualified, passionate about DSA with C++ and Frontend Development (HTML, CSS, JavaScript).">
+  <meta name="keywords" content="Ragipindi Abhinay Reddy, ABHINAY.DEV, SRM University AP, AFE-FFE Scholar, AWS Emerging Talent, AP EAMCET Rank 4298, JEE Mains Qualified, Coursera DSA BITS Pilani, Claude AI Anthropic, DSA C++, Frontend Developer, Guntur, HTML, CSS, JavaScript">
+  <meta name="author" content="Ragipindi Abhinay Reddy">
+  <title>Ragipindi Abhinay Reddy | AFE-FFE Scholar &amp; Frontend Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Theme Pre-hydration Script (Defaults to pure Black & White background) -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('portfolio-theme-mode');
+        var theme = saved || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#home" class="nav-brand" aria-label="Ragipindi Abhinay Reddy - Home">
+        <span class="brand-code">&lt;</span><span class="brand-name">Abhinay.dev</span><span class="brand-code">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Buttons (Theme Toggle & Mobile Menu) -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta-btn">Hire Me</a>
+
+        <button id="mobile-menu-toggle" class="icon-btn hamburger-btn" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <ul class="mobile-nav-links" role="list">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <a href="#contact" class="btn btn-primary btn-block mobile-drawer-cta">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Home Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-indicator"></span>
+            <span>AFE-FFE Scholar • AWS Emerging Talent Member</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-gradient">Ragipindi Abhinay Reddy</span>.<br>
+            CSE Student &amp; Frontend Developer.
+          </h1>
+          <p class="hero-description">
+            A <strong>Computer Science Engineering student at SRM University AP</strong>, proud <strong>AFE-FFE Scholar</strong>, and <strong>AWS Emerging Talent Member</strong> from <strong>Guntur</strong>. Passionate about mastering <strong>DSA with C++</strong> and crafting high-performance, accessible, and responsive frontend experiences using <strong>HTML, CSS, and JavaScript</strong>.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Let's Connect</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <a href="https://github.com/abhinayreddyragipindi1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile (abhinayreddyragipindi1)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/abhinay-reddy-ragipindi-6621b1382" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile (Ragipindi Abhinay Reddy)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="mailto:abhinayreddyragipindi@gmail.com" class="social-link" aria-label="Email Abhinay Reddy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Code Card Graphic -->
+        <div class="hero-visual">
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="window-title">DeveloperProfile.js</span>
+            </div>
+            <div class="window-body">
+              <pre><code><span class="token-keyword">const</span> <span class="token-variable">developer</span> = {
+  <span class="token-property">name</span>: <span class="token-string">'Ragipindi Abhinay Reddy'</span>,
+  <span class="token-property">brand</span>: <span class="token-string">'ABHINAY.DEV'</span>,
+  <span class="token-property">college</span>: <span class="token-string">'SRM University AP (CSE)'</span>,
+  <span class="token-property">hometown</span>: <span class="token-string">'Guntur, Andhra Pradesh'</span>,
+  <span class="token-property">honors</span>: [
+    <span class="token-string">'AFE-FFE Scholar'</span>,
+    <span class="token-string">'AWS Emerging Talent Member'</span>
+  ],
+  <span class="token-property">skills</span>: [
+    <span class="token-string">'DSA with C++'</span>,
+    <span class="token-string">'HTML, CSS &amp; JavaScript'</span>,
+    <span class="token-string">'Responsive Web Development'</span>
+  ],
+  <span class="token-property">status</span>: <span class="token-string">'Open to Opportunities!'</span>
+};
+
+<span class="token-comment">// Let's create something remarkable</span>
+<span class="token-function">createAmazingWebsites</span>(developer);</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio">
+            <h3 class="bio-heading">Building Clean, Responsive Web Apps with Strong Algorithmic Fundamentals</h3>
+            <p>
+              Hi! I'm Abhinay, a Computer Science Engineering student at <strong>SRM University AP</strong>, an <strong>AFE-FFE Scholar</strong>, and an <strong>AWS Emerging Talent Member</strong> based in Guntur, Andhra Pradesh.
+            </p>
+            <p>
+              I focus on building clean, accessible, and responsive user interfaces using <strong>semantic HTML5, modern CSS3 (Flexbox &amp; Grid), and vanilla JavaScript</strong>. Rather than relying on heavy external frameworks, I prioritize strong core web fundamentals — creating intuitive layouts that work smoothly across mobile, tablet, and desktop viewports, and writing clean DOM logic for interactive features like form validation and dynamic filters.
+            </p>
+            <p>
+              Alongside frontend development, I actively solve algorithmic challenges using <strong>Data Structures &amp; Algorithms in C++</strong>, giving me a disciplined approach to code efficiency, problem decomposition, and time-space optimization.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <div class="pillar-icon">💻</div>
+                <div>
+                  <h4 class="pillar-title">Responsive UI</h4>
+                  <p class="pillar-desc">Mobile-first layouts built with CSS Grid, Flexbox, and accessible markup.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon">⚡</div>
+                <div>
+                  <h4 class="pillar-title">Interactive JS</h4>
+                  <p class="pillar-desc">DOM manipulation, state handling, event-driven features, and clean code.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon">🧠</div>
+                <div>
+                  <h4 class="pillar-title">DSA in C++</h4>
+                  <p class="pillar-desc">Core problem solving, time-space efficiency, and algorithmic thinking.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-academic-note">
+              <span class="academic-badge">AP EAMCET Rank 4298</span>
+              <span class="academic-badge">JEE Mains Qualified</span>
+              <span class="academic-badge">Coursera DSA (BITS Pilani)</span>
+              <span class="academic-badge">Claude AI (Anthropic)</span>
+            </div>
+          </div>
+
+          <div class="about-stats-container">
+            <div class="stat-card">
+              <span class="stat-number stat-text">SRM AP</span>
+              <span class="stat-label">CSE Undergrad</span>
+              <p class="stat-subtext">Computer Science &amp; Engineering</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number stat-text">AFE-FFE</span>
+              <span class="stat-label">Scholar</span>
+              <p class="stat-subtext">Amazon Future Engineer &amp; FFE</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number stat-text">Frontend</span>
+              <span class="stat-label">HTML, CSS, JS</span>
+              <p class="stat-subtext">Clean, responsive interfaces</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number stat-text">C++ &amp; DSA</span>
+              <span class="stat-label">Problem Solving</span>
+              <p class="stat-subtext">Data structures &amp; algorithms</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Technical Toolkit</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <div class="section-divider"></div>
+          <p class="section-lead">The languages, frontend technologies, and developer tools I use to build responsive web applications.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Core Web &amp; Logic</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-tag level-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-detail">Semantic structure, forms, SEO basics, and web accessibility fundamentals.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-tag level-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-detail">Flexbox, CSS Grid layouts, custom properties, and responsive styling.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-tag level-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-detail">DOM manipulation, event handling, form validation, and localStorage.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C++ Programming</span>
+                  <span class="skill-tag level-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-detail">Core OOP concepts, algorithmic thinking, and memory management.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 2 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Styling &amp; Responsiveness</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Responsive Web Design</span>
+                  <span class="skill-tag level-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-detail">Mobile-first workflows, media queries, and fluid typography using clamp().</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS Flexbox &amp; Grid</span>
+                  <span class="skill-tag level-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-detail">One-dimensional and two-dimensional modern responsive layout architectures.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS Transitions &amp; UI</span>
+                  <span class="skill-tag level-familiar">Familiar</span>
+                </div>
+                <p class="skill-detail">Micro-interactions, button hover states, and smooth theme switching.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Web Accessibility (a11y)</span>
+                  <span class="skill-tag level-familiar">Familiar</span>
+                </div>
+                <p class="skill-detail">Semantic elements, ARIA labels, focus states, and keyboard navigability.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 3 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Tools &amp; Workflow</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git &amp; GitHub</span>
+                  <span class="skill-tag level-familiar">Familiar</span>
+                </div>
+                <p class="skill-detail">Branching, commit history, repository management, and GitHub Pages deployment.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Chrome DevTools</span>
+                  <span class="skill-tag level-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-detail">DOM inspection, responsive mode testing, console logging, and debugging.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-tag level-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-detail">Code formatting, extensions, integrated terminal, and productivity shortcuts.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Command Line / CLI</span>
+                  <span class="skill-tag level-beginner">Beginner</span>
+                </div>
+                <p class="skill-detail">Basic navigation, file operations, running scripts, and Git commands.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 4 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Problem Solving &amp; Cloud</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Data Structures &amp; Algorithms</span>
+                  <span class="skill-tag level-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-detail">Arrays, strings, recursion, sorting, search algorithms, and time complexity.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">AWS Cloud Fundamentals</span>
+                  <span class="skill-tag level-beginner">Beginner</span>
+                </div>
+                <p class="skill-detail">AWS Emerging Talent curriculum, core cloud computing concepts.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Cross-Browser Testing</span>
+                  <span class="skill-tag level-familiar">Familiar</span>
+                </div>
+                <p class="skill-detail">Manual testing across Chrome, Firefox, Safari, and Edge for layout consistency.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Clean Code Principles</span>
+                  <span class="skill-tag level-familiar">Familiar</span>
+                </div>
+                <p class="skill-detail">Descriptive naming, modular code organization, and DRY code practices.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Quick Technology Badges Grid -->
+        <div class="tech-badge-strip">
+          <span class="badge-item">HTML5</span>
+          <span class="badge-item">CSS3</span>
+          <span class="badge-item">JavaScript (ES6+)</span>
+          <span class="badge-item">C++</span>
+          <span class="badge-item">Data Structures &amp; Algorithms</span>
+          <span class="badge-item">CSS Flexbox</span>
+          <span class="badge-item">CSS Grid</span>
+          <span class="badge-item">Responsive Design</span>
+          <span class="badge-item">Git</span>
+          <span class="badge-item">GitHub</span>
+          <span class="badge-item">Chrome DevTools</span>
+          <span class="badge-item">VS Code</span>
+          <span class="badge-item">DOM APIs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+          <p class="section-lead">A collection of responsive web applications, design systems, and frontend tools.</p>
+        </div>
+
+        <!-- Project Filter Tabs -->
+        <div class="project-filter-container">
+          <div class="filter-tabs" role="tablist" aria-label="Project Categories">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+            <button class="filter-btn" data-filter="app" role="tab" aria-selected="false">Web Apps</button>
+            <button class="filter-btn" data-filter="js" role="tab" aria-selected="false">Vanilla JS</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Tic Tac Toe -->
+          <article class="project-card" data-category="js app">
+            <div class="project-preview">
+              <svg viewBox="0 0 400 220" width="100%" height="100%" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="grad-ttt" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f9fafb" />
+                    <stop offset="100%" stop-color="#f3f4f6" />
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="220" fill="url(#grad-ttt)"/>
+                <!-- Game Header & Turn Indicator -->
+                <rect x="25" y="14" width="105" height="16" rx="3" fill="#111827"/>
+                <rect x="270" y="12" width="105" height="20" rx="10" fill="#ffffff" stroke="#e5e7eb"/>
+                <rect x="285" y="17" width="75" height="10" rx="2" fill="#111827"/>
+
+                <!-- Scoreboard Strip -->
+                <rect x="25" y="38" width="110" height="26" rx="6" fill="#ffffff" stroke="#e5e7eb"/>
+                <rect x="35" y="46" width="90" height="10" rx="2" fill="#4b5563"/>
+
+                <rect x="145" y="38" width="110" height="26" rx="6" fill="#ffffff" stroke="#e5e7eb"/>
+                <rect x="155" y="46" width="90" height="10" rx="2" fill="#9ca3af"/>
+
+                <rect x="265" y="38" width="110" height="26" rx="6" fill="#ffffff" stroke="#e5e7eb"/>
+                <rect x="275" y="46" width="90" height="10" rx="2" fill="#4b5563"/>
+
+                <!-- 3x3 Grid Board Container -->
+                <rect x="115" y="72" width="170" height="135" rx="8" fill="#ffffff" stroke="#e5e7eb"/>
+
+                <!-- Row 1 -->
+                <rect x="123" y="78" width="48" height="36" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+                <line x1="137" y1="88" x2="157" y2="104" stroke="#111827" stroke-width="3" stroke-linecap="round"/>
+                <line x1="157" y1="88" x2="137" y2="104" stroke="#111827" stroke-width="3" stroke-linecap="round"/>
+
+                <rect x="176" y="78" width="48" height="36" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+                <circle cx="200" cy="96" r="10" fill="none" stroke="#4b5563" stroke-width="3"/>
+
+                <rect x="229" y="78" width="48" height="36" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+                <line x1="243" y1="88" x2="263" y2="104" stroke="#111827" stroke-width="3" stroke-linecap="round"/>
+                <line x1="263" y1="88" x2="243" y2="104" stroke="#111827" stroke-width="3" stroke-linecap="round"/>
+
+                <!-- Row 2 -->
+                <rect x="123" y="119" width="48" height="36" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+                <circle cx="147" cy="137" r="10" fill="none" stroke="#4b5563" stroke-width="3"/>
+
+                <rect x="176" y="119" width="48" height="36" rx="4" fill="#111827"/>
+                <line x1="190" y1="129" x2="210" y2="145" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+                <line x1="210" y1="129" x2="190" y2="145" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+
+                <rect x="229" y="119" width="48" height="36" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+
+                <!-- Row 3 -->
+                <rect x="123" y="160" width="48" height="36" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+
+                <rect x="176" y="160" width="48" height="36" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+                <circle cx="200" cy="178" r="10" fill="none" stroke="#4b5563" stroke-width="3"/>
+
+                <rect x="229" y="160" width="48" height="36" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+                <line x1="243" y1="170" x2="263" y2="186" stroke="#111827" stroke-width="3" stroke-linecap="round"/>
+                <line x1="263" y1="170" x2="243" y2="186" stroke="#111827" stroke-width="3" stroke-linecap="round"/>
+
+                <!-- Winning Strike Line (Diagonal) -->
+                <line x1="130" y1="82" x2="270" y2="194" stroke="#111827" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+              <div class="project-overlay">
+                <a href="https://github.com/abhinayreddyragipindi1/TicTacToe" target="_blank" rel="noopener noreferrer" class="preview-btn" aria-label="View live demo for Tic Tac Toe">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Demo
+                </a>
+                <a href="https://github.com/abhinayreddyragipindi1/TicTacToe" target="_blank" rel="noopener noreferrer" class="preview-btn" aria-label="View source code on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Vanilla JS</span>
+                <span class="tag">DOM Manipulation</span>
+                <span class="tag">Game Logic</span>
+                <span class="tag">CSS Grid</span>
+              </div>
+              <h3 class="project-title">Tic Tac Toe - Classic Game Web App</h3>
+              <p class="project-description">
+                A modern, responsive Tic Tac Toe web game with dual-mode gameplay (vs Friend / vs Smart AI), real-time turn indicators, dynamic win/draw detection, score tallying, and instant board reset.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/abhinayreddyragipindi1/TicTacToe" target="_blank" rel="noopener noreferrer" class="link-item">
+                  <span>Live Preview</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                </a>
+                <a href="https://github.com/abhinayreddyragipindi1/TicTacToe" target="_blank" rel="noopener noreferrer" class="link-item secondary">
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: To-Do List -->
+          <article class="project-card" data-category="app js">
+            <div class="project-preview">
+              <svg viewBox="0 0 400 220" width="100%" height="100%" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="grad-todo" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f9fafb" />
+                    <stop offset="100%" stop-color="#f3f4f6" />
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="220" fill="url(#grad-todo)"/>
+                <!-- Input Box & Add Button -->
+                <rect x="20" y="14" width="280" height="32" rx="6" fill="#ffffff" stroke="#e5e7eb"/>
+                <rect x="35" y="24" width="150" height="12" rx="2" fill="#9ca3af"/>
+                <rect x="308" y="14" width="72" height="32" rx="6" fill="#111827"/>
+                <rect x="323" y="25" width="42" height="10" rx="2" fill="#ffffff"/>
+
+                <!-- Filter Tabs -->
+                <rect x="20" y="54" width="55" height="20" rx="10" fill="#111827"/>
+                <rect x="32" y="59" width="31" height="10" rx="2" fill="#ffffff"/>
+
+                <rect x="82" y="54" width="65" height="20" rx="10" fill="#ffffff" stroke="#e5e7eb"/>
+                <rect x="94" y="59" width="41" height="10" rx="2" fill="#4b5563"/>
+
+                <rect x="154" y="54" width="85" height="20" rx="10" fill="#ffffff" stroke="#e5e7eb"/>
+                <rect x="166" y="59" width="61" height="10" rx="2" fill="#4b5563"/>
+
+                <!-- Task Items -->
+                <!-- Item 1 (Completed) -->
+                <rect x="20" y="82" width="360" height="34" rx="6" fill="#ffffff" stroke="#e5e7eb"/>
+                <rect x="32" y="92" width="14" height="14" rx="3" fill="#111827"/>
+                <polyline points="35,99 38,102 43,95" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                <line x1="56" y1="99" x2="220" y2="99" stroke="#9ca3af" stroke-width="2"/>
+                <rect x="56" y="95" width="160" height="8" rx="2" fill="#9ca3af" opacity="0.4"/>
+                <rect x="345" y="92" width="14" height="14" rx="3" fill="#f3f4f6"/>
+                <line x1="349" y1="96" x2="355" y2="102" stroke="#9ca3af" stroke-width="1.5"/>
+                <line x1="355" y1="96" x2="349" y2="102" stroke="#9ca3af" stroke-width="1.5"/>
+
+                <!-- Item 2 (Completed) -->
+                <rect x="20" y="122" width="360" height="34" rx="6" fill="#ffffff" stroke="#e5e7eb"/>
+                <rect x="32" y="132" width="14" height="14" rx="3" fill="#111827"/>
+                <polyline points="35,139 38,142 43,135" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                <line x1="56" y1="139" x2="200" y2="139" stroke="#9ca3af" stroke-width="2"/>
+                <rect x="56" y="135" width="140" height="8" rx="2" fill="#9ca3af" opacity="0.4"/>
+                <rect x="345" y="132" width="14" height="14" rx="3" fill="#f3f4f6"/>
+                <line x1="349" y1="136" x2="355" y2="142" stroke="#9ca3af" stroke-width="1.5"/>
+                <line x1="355" y1="136" x2="349" y2="142" stroke="#9ca3af" stroke-width="1.5"/>
+
+                <!-- Item 3 (Active) -->
+                <rect x="20" y="162" width="360" height="34" rx="6" fill="#ffffff" stroke="#111827" stroke-width="1.5"/>
+                <rect x="32" y="172" width="14" height="14" rx="3" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+                <rect x="56" y="175" width="210" height="8" rx="2" fill="#111827"/>
+                <rect x="290" y="170" width="45" height="18" rx="9" fill="#111827"/>
+                <rect x="300" y="175" width="25" height="8" rx="2" fill="#ffffff"/>
+                <rect x="345" y="172" width="14" height="14" rx="3" fill="#f3f4f6"/>
+                <line x1="349" y1="176" x2="355" y2="182" stroke="#9ca3af" stroke-width="1.5"/>
+                <line x1="355" y1="176" x2="349" y2="182" stroke="#9ca3af" stroke-width="1.5"/>
+
+                <!-- Bottom Status Strip -->
+                <rect x="20" y="202" width="90" height="8" rx="2" fill="#9ca3af"/>
+                <rect x="290" y="202" width="90" height="8" rx="2" fill="#6b7280"/>
+              </svg>
+              <div class="project-overlay">
+                <a href="https://github.com/abhinayreddyragipindi1/TodoList" target="_blank" rel="noopener noreferrer" class="preview-btn" aria-label="View live demo for To-Do List">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Demo
+                </a>
+                <a href="https://github.com/abhinayreddyragipindi1/TodoList" target="_blank" rel="noopener noreferrer" class="preview-btn" aria-label="View source code on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Vanilla JS</span>
+                <span class="tag">LocalStorage</span>
+                <span class="tag">DOM APIs</span>
+                <span class="tag">CSS Flexbox</span>
+              </div>
+              <h3 class="project-title">To-Do List - Smart Task Organizer</h3>
+              <p class="project-description">
+                An intuitive, responsive task manager with seamless item creation, completion toggles, tab filtering (All, Active, Completed), individual deletion, and automatic LocalStorage persistence.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/abhinayreddyragipindi1/TodoList" target="_blank" rel="noopener noreferrer" class="link-item">
+                  <span>Live Preview</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                </a>
+                <a href="https://github.com/abhinayreddyragipindi1/TodoList" target="_blank" rel="noopener noreferrer" class="link-item secondary">
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Personal Portfolio -->
+          <article class="project-card" data-category="app js">
+            <div class="project-preview">
+              <svg viewBox="0 0 400 220" width="100%" height="100%" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="grad-port" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f9fafb" />
+                    <stop offset="100%" stop-color="#f3f4f6" />
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="220" fill="url(#grad-port)"/>
+                <!-- Browser Window Chrome -->
+                <rect x="15" y="10" width="370" height="200" rx="8" fill="#ffffff" stroke="#e5e7eb"/>
+                <rect x="15" y="10" width="370" height="26" rx="8" fill="#f9fafb" stroke="#e5e7eb"/>
+                <circle cx="30" cy="23" r="4" fill="#d1d5db"/>
+                <circle cx="42" cy="23" r="4" fill="#d1d5db"/>
+                <circle cx="54" cy="23" r="4" fill="#d1d5db"/>
+                <rect x="70" y="17" width="260" height="12" rx="3" fill="#ffffff" stroke="#e5e7eb"/>
+                <rect x="150" y="20" width="100" height="6" rx="2" fill="#9ca3af"/>
+
+                <!-- Mini Portfolio Header -->
+                <rect x="25" y="42" width="60" height="10" rx="2" fill="#111827"/>
+                <rect x="180" y="44" width="30" height="6" rx="2" fill="#4b5563"/>
+                <rect x="218" y="44" width="30" height="6" rx="2" fill="#4b5563"/>
+                <rect x="256" y="44" width="35" height="6" rx="2" fill="#4b5563"/>
+                <circle cx="345" cy="47" r="6" fill="#111827"/>
+                <line x1="25" y1="58" x2="375" y2="58" stroke="#f3f4f6" stroke-width="1"/>
+
+                <!-- Mini Hero Left Column -->
+                <rect x="25" y="66" width="90" height="8" rx="4" fill="#f3f4f6"/>
+                <rect x="25" y="80" width="160" height="14" rx="3" fill="#111827"/>
+                <rect x="25" y="98" width="140" height="8" rx="2" fill="#6b7280"/>
+                <rect x="25" y="110" width="120" height="6" rx="2" fill="#9ca3af"/>
+
+                <!-- Buttons -->
+                <rect x="25" y="124" width="55" height="18" rx="4" fill="#111827"/>
+                <rect x="33" y="129" width="39" height="7" rx="2" fill="#ffffff"/>
+                <rect x="86" y="124" width="55" height="18" rx="4" fill="#ffffff" stroke="#e5e7eb"/>
+                <rect x="96" y="129" width="35" height="7" rx="2" fill="#111827"/>
+
+                <!-- Mini Hero Right Column (Code Window) -->
+                <rect x="205" y="66" width="165" height="76" rx="6" fill="#111827"/>
+                <circle cx="218" cy="76" r="3" fill="#4b5563"/>
+                <circle cx="227" cy="76" r="3" fill="#4b5563"/>
+                <circle cx="236" cy="76" r="3" fill="#4b5563"/>
+                <rect x="215" y="88" width="120" height="6" rx="2" fill="#34d399"/>
+                <rect x="215" y="98" width="100" height="6" rx="2" fill="#9ca3af"/>
+                <rect x="215" y="108" width="135" height="6" rx="2" fill="#fbbf24"/>
+                <rect x="215" y="118" width="90" height="6" rx="2" fill="#60a5fa"/>
+                <rect x="215" y="128" width="70" height="6" rx="2" fill="#9ca3af"/>
+
+                <!-- Mini Bottom Stat Cards -->
+                <rect x="25" y="152" width="78" height="46" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+                <rect x="33" y="160" width="35" height="8" rx="2" fill="#111827"/>
+                <rect x="33" y="172" width="45" height="6" rx="2" fill="#9ca3af"/>
+
+                <rect x="113" y="152" width="78" height="46" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+                <rect x="121" y="160" width="35" height="8" rx="2" fill="#111827"/>
+                <rect x="121" y="172" width="45" height="6" rx="2" fill="#9ca3af"/>
+
+                <rect x="201" y="152" width="78" height="46" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+                <rect x="209" y="160" width="35" height="8" rx="2" fill="#111827"/>
+                <rect x="209" y="172" width="45" height="6" rx="2" fill="#9ca3af"/>
+
+                <rect x="289" y="152" width="78" height="46" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+                <rect x="297" y="160" width="35" height="8" rx="2" fill="#111827"/>
+                <rect x="297" y="172" width="45" height="6" rx="2" fill="#9ca3af"/>
+              </svg>
+              <div class="project-overlay">
+                <a href="#home" class="preview-btn" aria-label="View live demo for Personal Portfolio">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Demo
+                </a>
+                <a href="https://github.com/abhinayreddyragipindi1/portfolio" target="_blank" rel="noopener noreferrer" class="preview-btn" aria-label="View source code on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3 (Grid &amp; Flexbox)</span>
+                <span class="tag">Vanilla JS</span>
+                <span class="tag">Responsive Design</span>
+              </div>
+              <h3 class="project-title">Personal Portfolio - Responsive Developer Showcase</h3>
+              <p class="project-description">
+                A clean, modern standalone portfolio built from scratch for Ragipindi Abhinay Reddy. Features minimalist white &amp; grey aesthetics, dark/light theme switching, smooth drawer navigation, and accessible real-time form validation.
+              </p>
+              <div class="project-links">
+                <a href="#home" class="link-item">
+                  <span>Live Preview</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                </a>
+                <a href="https://github.com/abhinayreddyragipindi1/portfolio" target="_blank" rel="noopener noreferrer" class="link-item secondary">
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+          <p class="section-lead">Have a project in mind, an open role, or just want to chat tech? Reach out below!</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Sidebar -->
+          <div class="contact-info-card">
+            <h3 class="contact-card-title">Contact Information</h3>
+            <p class="contact-card-desc">
+              I'm always eager to connect regarding frontend developer roles, software engineering internships, open-source projects, or hackathon collaborations.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <span class="contact-detail-label">Email</span>
+                  <a href="mailto:abhinayreddyragipindi@gmail.com" class="contact-detail-value">abhinayreddyragipindi@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <span class="contact-detail-label">Location</span>
+                  <span class="contact-detail-value">Guntur, Andhra Pradesh, India (SRM University AP)</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                  <span class="contact-detail-label">Response Time</span>
+                  <span class="contact-detail-value">Within 24 business hours</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-availability-box">
+              <div class="availability-status">
+                <span class="status-dot"></span>
+                <strong>Currently Available</strong>
+              </div>
+              <p>AFE-FFE Scholar &amp; AWS Emerging Talent Member actively seeking Frontend Developer internships &amp; project collaborations.</p>
+            </div>
+          </div>
+
+          <!-- Contact Form with Validation -->
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form" novalidate>
+              <!-- Success/Feedback Message Banner -->
+              <div id="form-alert" class="form-alert" role="alert" aria-live="polite" style="display: none;"></div>
+
+              <div class="form-row">
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="name" class="form-label">Full Name <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="e.g. Jane Doe"
+                      required
+                      aria-required="true"
+                      aria-describedby="name-error"
+                    >
+                    <span class="validation-icon" aria-hidden="true"></span>
+                  </div>
+                  <span id="name-error" class="error-text" aria-live="polite"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="e.g. jane@example.com"
+                      required
+                      aria-required="true"
+                      aria-describedby="email-error"
+                    >
+                    <span class="validation-icon" aria-hidden="true"></span>
+                  </div>
+                  <span id="email-error" class="error-text" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject / Purpose <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <select id="subject" name="subject" class="form-control" required aria-required="true" aria-describedby="subject-error">
+                    <option value="" disabled selected>Select an option...</option>
+                    <option value="internship">Frontend Developer Internship / Junior Role</option>
+                    <option value="job">Full-Time Frontend Engineering Opportunity</option>
+                    <option value="freelance">Freelance Web App / Project</option>
+                    <option value="collaboration">Hackathon / Technical Collaboration</option>
+                    <option value="other">General Inquiries / Coffee Chat</option>
+                  </select>
+                </div>
+                <span id="subject-error" class="error-text" aria-live="polite"></span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-control"
+                    rows="5"
+                    placeholder="Tell me about your project, team, or opportunity..."
+                    required
+                    aria-required="true"
+                    aria-describedby="message-error"
+                  ></textarea>
+                </div>
+                <div class="textarea-footer">
+                  <span id="message-error" class="error-text" aria-live="polite"></span>
+                  <span id="char-counter" class="char-counter">0 / 500</span>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-block submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+                <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <a href="#home" class="nav-brand" aria-label="Ragipindi Abhinay Reddy - Home">
+          <span class="brand-code">&lt;</span><span class="brand-name">Abhinay.dev</span><span class="brand-code">/&gt;</span>
+        </a>
+        <ul class="footer-nav" role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer-socials" style="display: flex; gap: 8px;">
+          <a href="https://github.com/abhinayreddyragipindi1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/abhinay-reddy-ragipindi-6621b1382" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="mailto:abhinayreddyragipindi@gmail.com" class="social-link" aria-label="Email Abhinay Reddy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top of page" title="Scroll to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Ragipindi Abhinay Reddy. Built with semantic HTML, modern CSS, and vanilla JavaScript.</p>
+        <p class="footer-subtext">Designed for speed, responsiveness, and web accessibility.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
